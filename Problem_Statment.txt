@@ -1,10 +1,11 @@
 Problem Statement :
 
 1. Create a simple web interface like swiggy.
-2. Display products in the front page
+2. Create Registration and login page.
+2. Display products in the main page fetching from backend.
 3. Below every product, there should be a - and + button to increase/decrease the cart count
-4. When increasing, there should be a table below that dynamically creates the product and the price of the product.
-
-Advancement :
-
-* Use db connection and ajax.
+4. Create a table below for the temporary carts section.
+5. As the quantity increases/decreases the table should dynamically change and display the total.
+6. When clicking the carts button in the main page, the same table should be listed there also... the quantity section should be updateable.
+7. When clicking the save button in carts page, the carts details should be saved to db.
+8. The main page must be updated with the previously saved carts data
