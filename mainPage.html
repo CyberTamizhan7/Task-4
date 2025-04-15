@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Task 4</title>
+    <link rel="stylesheet" href="style_main_page.css">
+</head>
+<body>
+    <h1>Bookify</h1>
+	<p id="label_username">Username : <strong id="m_username"></strong></p>
+    <div id="sub_heading">
+        <p id="books">BOOKS</p>
+        <button data-bind="click: addToCart" id="b_add_to_cart"">ADD TO CART</button>
+    </div>
+
+	<div data-bind="foreach: books" class="product_container">
+		<p data-bind="text: book_name" class="p_book">Book 1</p>
+		<p class="l_price">Price : $<strong data-bind="text: book_price">0</strong></p>
+		<img data-bind="attr: { src: book_img, alt: book_name }">
+		<div>
+	    	<button class="minus" data-bind="click: $parent.decreaseQuantity">-</button>
+	    	<p class="minus_plus" data-bind="text: book_quantity">0</p>
+	    	<button class="plus" data-bind="click: $parent.increaseQuantity">+</button>
+        </div>
+    </div>
+
+    <table id="t_cart">
+	<caption>CART DETAILS</caption>
+	<thead>
+	    <tr>
+		<td>SNo</td>
+		<td>Book Name</td>
+		<td>Price</td>
+		<td>Quantity</td>
+	    </tr>
+	</thead>
+	<tbody data-bind="foreach: books">
+	    <tr>
+			<td data-bind="text: $index()+1">1</td>
+			<td data-bind="text: book_name">The Killer Dutch</td>
+			<td data-bind="text: book_price">$100</td>
+			<td data-bind="text: book_quantity">0</td>
+	    </tr>
+
+	</tbody>
+    </table>
+
+    <div id="d_total">
+        <p id="total">Total : $</p>
+        <p data-bind="text: total" id="total_value">$0</p>
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    <script src="script_main_page.js"></script>
+</body>
+</html>

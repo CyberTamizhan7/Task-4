@@ -1,0 +1,32 @@
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+h1{
+    margin-top: 13%;
+    font-size: 60px;
+    font-family: sans-serif;
+}
+
+button{
+    font-size: 50px;
+    color: white;
+    background-color: rgb(0, 0, 255);
+    border-radius: 12px;
+    border: 1px solid blue;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+button:active{
+    font-size: 45px;
+}

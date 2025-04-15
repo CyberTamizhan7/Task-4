@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Bookify</title>
+    <link rel="stylesheet" href="style_sign_in.css">
+</head>
+<body>
+    <div class="sign_in_containter">
+        <form action="login_check.php" method="post">
+            <h1>Sign In</h1>
+            <label>Username</label>
+            <input type="text" name="l_username" required>
+            <label>Password</label>
+            <input type="password" name="l_password" required>
+            <button type="submit">Sign In</button>
+            <p>Don't Have An Account? <strong onclick="to_sign_up()">Sign Up</strong></p>
+        </form>
+    </div>
+    <script src="script_sign_in.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Problem Statement :
+
+1. Create a simple web interface like swiggy.
+2. Display products in the front page
+3. Below every product, there should be a - and + button to increase/decrease the cart count
+4. When increasing, there should be a table below that dynamically creates the product and the price of the product.
+
+Advancement :
+
+* Use db connection and ajax.

@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style_carts.css">
+</head>
+<body>
+    <p id="label_username">Username : <strong id="c_username"></strong></p>
+    <table>
+        <caption>Carts Table</caption>
+        <thead>
+            <tr>
+                <th>SNo</th>
+                <th>Book</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Sub Total</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: books()">
+            <tr>
+                <td data-bind="text: $index()+1"></td>
+                <td data-bind="text: book_name"></td>
+                <td data-bind="text: book_price"></td>
+                <td>
+                    <input type="number" data-bind="value: book_quantity, valueUpdate: 'input'"/>
+                </td>
+                <td data-bind="text: subTotal"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="l_total">Total : <strong id="total" data-bind="text: total"></strong></p>
+    <button id="save" data-bind="click: save">SAVE</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    <script src="script_carts.js"></script>
+</body>
+</html>

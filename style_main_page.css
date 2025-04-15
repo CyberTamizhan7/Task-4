@@ -1,0 +1,154 @@
+body{
+	background: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.6)),
+			url("Assets/Background.jfif");
+	background-size: cover;
+}
+
+
+.product_container{
+	display: flex;
+	
+}
+
+.p_book{
+	color: white;
+	background-color: black;
+}
+
+.l_price{
+	color: white;
+	background-color: black;
+}
+
+.minus{
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	font-size: 50px;	
+	width: 70px;	
+	background-color: #FEE715;
+}
+
+.minus_plus{
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+}
+
+.plus{
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	font-size: 50px;
+	width: 70px;
+	background-color: #FEE715;
+}
+
+#label_username, #m_username{
+	color: white;
+	background-color: black;
+	font-size: 30px;
+	font-weight: bold;
+	width: 200px;
+	padding: 15px;
+}
+
+#label_username{
+	margin-left: 25px;
+	border: 2px solid white;
+}
+
+#sub_heading{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+#books{
+	display: inline-block;
+	padding: 25px;
+	margin-left: 50px;
+	font-size: 45px;
+	color: black;
+	background-color: white;
+}
+
+#b_add_to_cart{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: 60px;
+	font-size: 30px;
+	color: white;
+	background-color: orange;
+	padding: 25px;
+	border-radius: 10px;
+}
+
+#total{
+	display: inline-block;
+	color: white;
+}
+
+#total_value{
+	display: inline-block;	
+	color: #39FF14;
+}
+
+#d_total{
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+h1{
+	display: grid;
+	place-items: center;
+	font-size: 80px;
+	background-color: dark blue;
+	color: white;
+	height: 150px;
+	padding-top: 64px;
+}
+
+caption{
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	background-color:  #101820;
+}
+
+table{
+	background-color: white;
+	text-align: center;
+	margin: 100px;
+	color: black;
+	border-collapse: collapse;
+	
+}
+
+table caption{
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 25px;
+}
+
+thead td{
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+td{
+	border: 2px solid black;
+	width: 300px;
+	font-size: 30px;
+	padding: 30px;
+}
+
+
+
+
